@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as mlt
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 ## Data
@@ -16,4 +16,7 @@ df.head()
 
 ## Create variables
 df["icd-share"] = df["icd-teu"]/df["ctg-teu"]*100
+
+## Plot
+plt.plot(df.t, df.icd-teu)
 
